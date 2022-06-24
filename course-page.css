@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    /* font-family: "Open Sans", sans-serif !important; */
+}
+
+.home-section {
+    background: url(./images/banner3.jpg) center/cover;
+    color: rgb(202, 198, 198);
+    background-repeat: no-repeat;
+}
+
+/* .home-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.35;
+    background: linear-gradient(to left, #083262 0%, #063161 100%);
+} */
+
+.home-section .heading {
+    margin-top: 5rem;
+    color: #fff;
+}
+
+.home-section .heading h1 {
+    font-size: 4rem;
+    text-shadow: 2px 3px #ff8000;
+    font-weight: 600;
+}
+
+.home-section .icon {
+    font-weight: bold;
+    padding: 15px 17px 0px 1px;
+}
+
+.home-section .icon .stars {
+    color: #ff8000;
+}
+
+
+.home-section .home-title h2 {
+    font-weight: 600 !important;
+    font-size: 2.2rem;
+}
+
+.home-section .home-title {
+    text-transform: uppercase;
+    max-width: 300px;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+/* Navbar style here */
+.navbar-nav {
+    /* justify-content: space-between; */
+    margin: 0 auto;
+}
+.navbar-nav .nav-item {
+    margin: 0 23px;
+}
+.course-overview .col-md-4 a{
+    text-decoration: none;
+    color: black;
+}
+.course-overview .col-md-4 i{
+    font-size: 7rem;
+}
+.course-overview .col-md-4 p{
+    font-size: 2rem;
+}
+/* Placement support style here */
+
+.placement .card{
+    height: 100%;
+}
+.placement .card .place-desc i {
+    font-size: 3.5rem;
+}
+
+.placement .card .place-desc p {
+    padding: 1rem;
+    margin: 0;
+}
+
+.place-down {
+    height: 4rem;
+    justify-content: center;
+}
+.place-down .btn{
+    background-color: #FF8000;
+    color: #fff;
+}
+
+/* course curriculum style here */
+/* .course-curriculum .heading{
+    padding: 2rem;
+    border-radius: 5px;
+} */
+
+.course-curriculum .accordion-item{
+    background-color: #e0edf2;
+    border: 1px solid #e0edf2;
+    padding: 5px;
+    margin-top: 1rem;
+}
+.course-curriculum .accordion .accordion-body{
+    padding: 1rem 0.25rem;
+}
+.course-curriculum ul li{
+    list-style: none;
+}
+.course-curriculum ul .accordion ul{
+    padding: 0 0 1rem 2rem;
+}
+.course-curriculum .accordion-body ul{
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.course-curriculum a{
+    text-decoration: none;
+}
+.course-curriculum li a{
+    float: right;
+}
+.course-curriculum .accordion-item li{
+    cursor: pointer;
+}
+
+.course-curriculum .accordion-item li a{
+    text-decoration: none;
+}
+.course-curriculum .accordion-item li i.fa{
+    color: #FF8000;
+    position: absolute;
+}
+.course-curriculum .accordion-item li .title{
+    margin-left: 30px;
+}
+.course-curriculum .accordion-item li ul li{
+    padding: 0 0 0 20px;
+    position: relative;
+    font-size: 15px;
+}
+.course-curriculum .accordion-item .timeline::after{
+    border-left: 2px solid #000;
+    content: "";
+    border-left: 1px solid #008cac;
+    position: absolute;
+    top: 16px;
+    left: -2px;
+    height: 100%;
+    width: 1px;
+}
+.course-curriculum .accordion-item li ul li::before{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 3px solid #ff8000;
+    position: absolute;
+    top: 9px;
+    left: -5px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+}
+/* .timeline::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: red;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+} */
+
+/* Projects style here */
+.projects .card-header {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .card-header span {
+    margin-left: 30px;
+}
+
+.projects .card-header i.fa {
+    position: absolute;
+    left: 20px;
+}
+
+/* account login style here */
+.account-login {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.account-login .login-header {
+    width: 100%;
+    text-align: center;
+    background-color: #ff8000;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.account-login h5 {
+    font-style: 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.account-login p a {
+    padding-left: 2px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.login-form {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.login-form textarea,
+.login-form input {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #a39e9e;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.login-form button.btn {
+    width: 100%;
+    background: linear-gradient(to left, #FF8000 0%, #fa9939 100%);
+    font-size: 18px;
+    padding: 11px;
+    color: #fff;
+    border: 0px;
+    margin: 10px 0px 20px;
+}
+
+.login-form .btn:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.remember {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+.custom-checkbox a {
+    color: #2196F3;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    background-color: #bfbcbc;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-checkbox:hover input~.checkmark {
+    background-color: #747474;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Tools section style here */
+.tools img{
+    width: 70px;
+    margin: auto 30px;
+}
+.tools .images{
+    box-shadow: 0 0 10px #f5f5f5;
+    overflow: hidden;
+}
+
+/* Training Option style here */
+
+.training .panel-body h4 {
+    text-transform: uppercase;
+}
+
+.training .row .panel {
+    background-color: #fff;
+    box-shadow: 0 -2px -10px #747474;
+    border-radius: 3px;
+    height: 100%;
+}
+.training .row .panel .btn{
+    color: white;
+    background-color: #ff8000;
+    width: 100%;
+    bottom: 20px;
+}
+
+.training .panel .panel-heading a i {
+    color: rgb(158, 154, 154);
+}
+
+.training .panel .btn{
+    /* line-height: 38px; */
+    bottom: 50px;
+}
+
+.training .panel-body .panel-footer .btn {
+    color: #fff;
+    padding: 8px 50px;
+    background: linear-gradient(to left, #FF8000 0%, #fa9939 100%);
+}
+
+/* Faq's section style here */
+.faqs .card .card-header {
+    cursor: pointer;
+}
+
+.faqs .card .icon {
+    color: rgb(80, 78, 78);
+}
+
+.faqs .card .icon i.fa-solid {
+    right: 20px;
+    position: absolute;
+}
+
+/* Sailpoint */
+
+.sailpoint .panel p {
+    margin: 5px 3px;
+    display: inline-block;
+}
+
+.sailpoint .panel a {
+    text-decoration: none;
+    background-color: #eee;
+    color: #000;
+    padding: 2px 7px;
+    box-shadow: 0 1px 5px #f5f5f5;
+    border-radius: 3px;
+    /* margin: 5px; */
+    font-size: 1rem;
+}
+
+.sailpoint .card {
+    height: 100%;
+    box-shadow: 1px 2px 3px #cdcaca;
+    max-width: 300px;
+}
+
+.sailpoint .card .icon {
+    color: yellow;
+}
